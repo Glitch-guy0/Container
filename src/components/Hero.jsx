@@ -8,8 +8,33 @@ export default function Hero() {
         className="h-full w-80 sm:w-1/3 dark:bg-zinc-900 bg-gray-400"
       >
         {/* Drawer side */}
-        <div id="dynamic_gap" className=" p-2 sm:p-[1vw]">
-          <div id="alignCards" className="flex flex-wrap justify-center sm:justify-evenly gap-3">
+        <div id="dynamic_gap" className=" p-4">
+          <h2
+            className="p-2 font-bold text-xl text-center"
+          >OS Images</h2>
+          <div
+            id="alignCards"
+            className="grid grid-cols-1 gap-2 md:grid-cols-2
+              
+          
+              // remove this
+             bg-green-300"
+          >
+            <Card />
+            <Card />
+            <Card />
+          </div>
+          <h2
+            className="p-2 font-bold text-xl text-center mt-9"
+          >Application Images</h2>
+          <div
+            id="alignCards"
+            className="grid grid-cols-1 gap-2 md:grid-cols-2
+              
+          
+              // remove this
+             bg-green-300"
+          >
             <Card />
             <Card />
             <Card />
