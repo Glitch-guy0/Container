@@ -1,9 +1,12 @@
-import Card from "./Card";
+
+import ContainerCard from "./ContainerCard";
 
 export default function ContainerList() {
   return (
-    <div>
-      <Card />
+    <div
+      className="flex justify-center"
+    >
+      <ContainerCard />
     </div>
   )
 }

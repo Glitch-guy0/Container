@@ -1,4 +1,5 @@
 import Card from "./Card";
+import ContainerList from "./ContainerList";
 
 export default function Hero() {
   return (
@@ -14,11 +15,7 @@ export default function Hero() {
           >OS Images</h2>
           <div
             id="alignCards"
-            className="grid grid-cols-1 gap-2 md:grid-cols-2
-              
-          
-              // remove this
-             bg-green-300"
+            className="grid grid-cols-1 gap-2 md:grid-cols-2"
           >
             <Card />
             <Card />
@@ -29,11 +26,7 @@ export default function Hero() {
           >Application Images</h2>
           <div
             id="alignCards"
-            className="grid grid-cols-1 gap-2 md:grid-cols-2
-              
-          
-              // remove this
-             bg-green-300"
+            className="grid grid-cols-1 gap-2 md:grid-cols-2"
           >
             <Card />
             <Card />
@@ -48,7 +41,9 @@ export default function Hero() {
         bg-gray-200"
       >
         {/* Content section */}
-        <div id="dynamic_gap" className=" p-2 sm:p-[1.5vw]"></div>
+        <div id="dynamic_gap" className=" p-2 sm:p-[1.5vw]">
+          <ContainerList />
+        </div>
       </div>
     </>
   );
